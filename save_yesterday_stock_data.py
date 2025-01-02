@@ -35,7 +35,7 @@ def save_yesterday_stock_data():
             stock_data.index = stock_data.index.tz_convert(kst)
             
             # 어제 날짜에 해당하는 파일 이름 생성
-            file_name = f"/저장폴더더/{yesterday.strftime('%Y-%m-%d')}_{name}.txt"
+            file_name = f"/저장폴더/{yesterday.strftime('%Y-%m-%d')}_{name}.txt"
             
             # 텍스트 파일로 저장 (종목명 포함)
             with open(file_name, "w") as file:
